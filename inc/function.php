@@ -68,7 +68,7 @@ function at_rest_get_data_endpoint($request_data)
         $data = array(
             "status" => "success",
             "categories" => get_categories($args),
-            "authors" => get_users( array( 'fields' => array( 'user_login', 'ID' ), 'role__in' => array( 'Author' )  ) ), 
+            "authors" => get_users( array( 'fields' => array( 'user_login', 'ID' ), 'role__in' => array( 'Author' )  ) ),
         );
         return $data;
     }else{
